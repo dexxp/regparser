@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/dexxp/regparser"
+	"github.com/dexxp/regparser/appcompatcache"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
-	"www.velocidex.com/golang/regparser"
-	"www.velocidex.com/golang/regparser/appcompatcache"
 )
 
 var (

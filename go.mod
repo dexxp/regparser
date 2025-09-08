@@ -1,4 +1,4 @@
-module www.velocidex.com/golang/regparser
+module github.com/dexxp/regparser
 
 go 1.18
 

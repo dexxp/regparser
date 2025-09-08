@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/dexxp/regparser"
 	kingpin "gopkg.in/alecthomas/kingpin.v2"
-	"www.velocidex.com/golang/regparser"
 )
 
 var (
