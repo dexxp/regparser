@@ -431,21 +431,21 @@ func (self *CM_KEY_VALUE) ValueData() *ValueData {
 		// Leave the raw data as is in the ValueData struct.
 
 	case REG_DWORD:
-		if data_size != 4 {
+		if len(result.Data) != 4 {
 			result.Error = errors.New("Data is of incorrect size")
 		} else {
 			result.Uint64 = uint64(binary.LittleEndian.Uint32(result.Data))
 		}
 
 	case REG_DWORD_BIG_ENDIAN:
-		if data_size != 4 {
+		if len(result.Data) != 4 {
 			result.Error = errors.New("Data is of incorrect size")
 		} else {
 			result.Uint64 = uint64(binary.BigEndian.Uint32(result.Data))
 		}
 
 	case REG_QWORD:
-		if data_size != 8 {
+		if len(result.Data) != 8 {
 			result.Error = errors.New("Data is of incorrect size")
 		} else {
 			result.Uint64 = binary.LittleEndian.Uint64(result.Data)
